@@ -11,16 +11,12 @@
 <body>
     <script src="https://unpkg.com/@microsoft/mgt@2.6.0/dist/bundle/mgt-loader.js"></script>
     <mgt-msal2-provider
-        client-id="9dc91209-5443-4f02-8cb4-4f2a3406fc31"
+        client-id="[AAD APP ClientID]"
         scopes="User.Read,
             User.ReadBasic.All,
             Calendars.Read,
-            Files.Read,
-            Files.Read.All,
-            Sites.Read.All,
             Tasks.Read,
-            Tasks.ReadWrite,
-            People.Read">
+            Tasks.ReadWrite">
     </mgt-msal2-provider>
     <div style="display: flex;">
         <mgt-login>
