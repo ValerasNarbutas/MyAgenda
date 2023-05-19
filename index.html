@@ -8,14 +8,6 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
-<style>
-  mgt-agenda {
-    --agenda-header-color: blue;
-    --event-time-color: blue;
-    --event-subject-color: blue;
-    --event-location-color: blue;
-  }
-</style>
 <body>
     <script src="https://unpkg.com/@microsoft/mgt@2.6.0/dist/bundle/mgt-loader.js"></script>
     <mgt-msal2-provider
@@ -40,14 +32,16 @@
     <div class="features">
         <div class="header">
             <div class="title">
-            <h2>One Productivity Hub</h2>
+            <h2>My agenda</h2>
             <div class="row">
                 <div class="column"><h3>Calendar events</h3></div>
+            <div class="column"><h3>To do list</h3></div>
             </div>
             </div>
         </div>
         <div class="row" id="content">
             <div class="column" id="mgt-col"><mgt-agenda /></div>
+            <div class="column" id="mgt-col"><mgt-todo /></div>
         </div>
     </div> 
 </body>
