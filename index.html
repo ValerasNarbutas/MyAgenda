@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>One productivity Hub</title>
+    <title>My agenda</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
@@ -33,20 +33,10 @@
     <div style="display: flex;">
         <mgt-login>
             <template data-type="signed-in-button-content">
-                <div>{{this}}</div>
                 <div>{{personDetails.givenName}}</div>
               </template>
         </mgt-login> 
-            
     </div>
-    <mgt-person person-query="me" class="anonymous-display" view="twolines" line2-property="department" person-card="hover"
-        disableimagefetch="true">
-        <template data-type="person-card">
-            <mgt-person-card inherit-details is-expanded="true">
-                {{ this }}
-            </mgt-person-card>
-        </template>
-    </mgt-person>
     <div>
         <mgt-person person-query="me"></mgt-person> mgt-person
         <mgt-person-card person-query="me" id="online" show-presence></mgt-person-card>mgt-person-card
@@ -59,24 +49,13 @@
             <h2>One Productivity Hub</h2>
             <div class="row">
                 <div class="column"><h3>Calendar events</h3></div>
-                <div class="column"><h3>To-do tasks</h3></div>
-                <div class="column"><h3>Files</h3></div>
             </div>
             </div>
         </div>
 
         <div class="row" id="content">
             <div class="column" id="mgt-col"><mgt-agenda /></div>
-            <div class="column" id="mgt-col"><mgt-todo /></div>
-            <div class="column" id="mgt-col"><mgt-file-list /></div>
         </div>
     </div> 
-    <div>
-        <mgt-person person-query="me"></mgt-person>
-    </div>
-    <div>
-        <mgt-people-picker></mgt-people-picker>
-        <mgt-teams-channel-picker></mgt-teams-channel-picker>
-    </div>
 </body>
 </html>
